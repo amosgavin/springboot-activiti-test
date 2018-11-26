@@ -1,10 +1,18 @@
 package com.example.demo.entity;
 
+import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
+import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
+import com.gitee.sunchenbin.mybatis.actable.command.BaseModel;
+import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 
-public class LeaveInfo {
+@Table(name = "leave_info")
+public class LeaveInfo extends BaseModel {
 
+	@Column(name = "id",type = MySqlTypeConstant.INT,length = 11,isKey = true,isAutoIncrement = true)
 	private String id;
+	@Column(name = "status" ,type = MySqlTypeConstant.VARCHAR , length = 24)
 	private String status;
+	@Column(name = "leave_msg" ,type = MySqlTypeConstant.VARCHAR , length = 240)
 	private String leaveMsg;
 
 	private String taskId;

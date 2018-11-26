@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-2ze41lui7lm025267o.mysql.rds.aliyuncs.com:3306/db_jedi_activiti?characterEncoding=utf8&useSSL=false&autoReconnect=true
+    username: test
+    password: Test@hfq
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database: MYSQL
+
+server:
+  port: 8081

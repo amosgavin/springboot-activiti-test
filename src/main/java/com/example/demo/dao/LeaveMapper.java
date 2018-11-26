@@ -1,9 +1,11 @@
 package com.example.demo.dao;
 
+import com.example.demo.entity.LeaveInfo;
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 
-import com.example.demo.entity.LeaveInfo;
-
+@Mapper
 public interface LeaveMapper {
 
 	int getCount();
