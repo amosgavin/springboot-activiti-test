@@ -8,7 +8,7 @@ import com.gitee.sunchenbin.mybatis.actable.constants.MySqlTypeConstant;
 @Table(name = "leave_info")
 public class LeaveInfo extends BaseModel {
 
-	@Column(name = "id",type = MySqlTypeConstant.INT,length = 11,isKey = true,isAutoIncrement = true)
+	@Column(name = "id",type = MySqlTypeConstant.VARCHAR,length = 36,isKey = true)
 	private String id;
 	@Column(name = "status" ,type = MySqlTypeConstant.VARCHAR , length = 24)
 	private String status;
